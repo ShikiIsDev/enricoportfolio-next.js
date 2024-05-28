@@ -1,5 +1,5 @@
-import { global } from "styled-jsx/css"
 import "./globals.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +14,14 @@ export default function Home() {
 
       {/* Second Section */}
       <section className="h-screen bg-gray-300" id="About Us">
-        {/* Content of the second section */}
+        <div className="block sm:hidden h-full w-full">
+          <Image
+            src="/Portfolio.png"
+            alt="resume"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </section>
 
       {/* Third Section */}
@@ -22,10 +29,10 @@ export default function Home() {
         {/* Content of the third section */}
       </section>
 
-      {/* Third Section */}
+      {/* Fourth Section */}
       <section className="h-screen bg-gray-500" id="Contact Me">
-        {/* Content of the third section */}
+        {/* Content of the fourth section */}
       </section>
     </div>
-  )
+  );
 }

@@ -1,0 +1,17 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background-color: #white;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .text {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
