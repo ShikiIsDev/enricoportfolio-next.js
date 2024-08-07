@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
-import loading from "@/components/loading";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +22,6 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body className={`${inter.className} bg-gray-100`}>
-        <loading />
         <Navbar />
         <main>{children}</main>
       </body>

@@ -1,37 +1,36 @@
+"use client"
+
 import "./globals.css";
-import Image from "next/image";
+import Intro from "./intro";
+import About from "./about";
+import Portfolio from "./Portfolio";
+import Contact from "./contact";
 
 export default function Home() {
   return (
     <div>
       {/* First Section */}
-      <section className="h-screen bg-gray-200 flex justify-center items-center" id="Home">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold">Welcome to my website</h1>
-          <p> Website</p>
-        </div>
+      <section className="relative w-screen h-screen bg-gray-200 flex items-center justify-center" id="Home">
+      <Intro />
       </section>
 
       {/* Second Section */}
-      <section className="h-screen bg-gray-300" id="About Us">
-        <div className="block sm:hidden h-full w-full">
-          <Image
-            src="/Portfolio.png"
-            alt="resume"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
+      <section className="relative w-screen h-screen bg-gray-300 flex items-center justify-center" id="About Us">
+        <About />
       </section>
 
       {/* Third Section */}
       <section className="h-screen bg-gray-400" id="Portfolio">
-        {/* Content of the third section */}
+       <Portfolio />
       </section>
 
       {/* Fourth Section */}
       <section className="h-screen bg-gray-500" id="Contact Me">
-        {/* Content of the fourth section */}
+        <br></br>
+        <br></br>
+        <br></br>
+        <Contact />
+        <br></br>
       </section>
     </div>
   );
